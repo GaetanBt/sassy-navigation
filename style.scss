@@ -1,0 +1,75 @@
+charset "UTF-8";
+/*
+ * Configurable navigation with Sass
+ *
+ * Set the $horizontal_navigation variable to true or false to get the horizontal or vertical navigation
+ *
+ * @author Gaëtan Bonnot
+ * @see @GaetanBt on Twitter
+ * @see gaetanbt.com (not already using Sass on my Website :$)
+ *
+ * Some helpful advices from Gaël Poupard
+ * @see @ffoodd_fr on Twitter
+ * @see ffoodd.fr
+ *
+ * @lastmodified 2014-02-07
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// Variable
+$horizontal_navigation: true; // horizontal navigation -> true ; vertical navigation -> false
+
+$nav_bg: #222;
+$link_color: #fff;
+$warning_bg: tomato;
+
+// Styling the navigation
+.nav {
+  color: #fff;
+  font-family: Verdana, sans-serif;
+  font-size: .875em;
+  list-style-type: none;
+  margin: 5em;
+  
+  li {
+    @if $horizontal_navigation == true {
+      display: inline-block;
+    } @else if $horizontal_navigation == false {
+      display: block;
+    } @else {
+      display: block;
+      // Displays the error message
+      &:first-child:after {
+        content: "Error in the $horizontal_navigation variable: Must be 'true' or 'false'.";
+        background: $warning_bg;
+        border: 3px solid darken($warning-bg, 10%);
+        border-left: 0;
+        left: 100%;
+        padding: 1em;
+        position: absolute;
+        top: 0;
+      }
+    } 
+    position: relative;
+    width: 20%;
+  }
+  
+  a {
+    background: $nav_bg;
+    color: $link_color;
+    display: block;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: background-color .25s ease;
+    transition: background-color .25s ease;
+    
+    &:hover {
+      background: lighten(#222, 10%);
+    }
+  }
+}
