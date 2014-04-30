@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*
+ * Configurable navigation with Sass
+ *
+ * Set the $horizontal_navigation variable to true or false to get the horizontal or vertical navigation
+ *
+ * @author Gaëtan Bonnot
+ * @see @GaetanBt on Twitter
+ * @see gaetanbt.com (not already using Sass on my Website :$)
+ *
+ * Some helpful advices from Gaël Poupard
+ * @see @ffoodd_fr on Twitter
+ * @see ffoodd.fr
+ *
+ * @lastmodified 2014-02-07
+*/
+/* line 17, style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 31, style.scss */
+.nav {
+  color: #fff;
+  font-family: Verdana, sans-serif;
+  font-size: .875em;
+  list-style-type: none;
+  margin: 5em;
+}
+/* line 38, style.scss */
+.nav li {
+  display: inline-block;
+  position: relative;
+  width: 20%;
+}
+/* line 61, style.scss */
+.nav a {
+  background: #222222;
+  color: white;
+  display: block;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color .25s ease;
+  transition: background-color .25s ease;
+}
+/* line 71, style.scss */
+.nav a:hover {
+  background: #3c3c3c;
+}
