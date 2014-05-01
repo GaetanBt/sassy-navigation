@@ -218,6 +218,10 @@ pip-log.txt
 ## Sass & Codekit config
 #############
 .sass-cache
-config.codekit
-config.rb
 style.css
+config.codekit
+
+#############
+## Set your own config file for Sass & Compass
+#############
+config.rb
