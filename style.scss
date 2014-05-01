@@ -36,7 +36,7 @@ $warning_bg: tomato;
   font-size: .875em;
   list-style-type: none;
   margin: 5em;
-  
+
   li {
     @if $horizontal_navigation == true {
       display: inline-block;
@@ -55,11 +55,11 @@ $warning_bg: tomato;
         position: absolute;
         top: 0;
       }
-    } 
+    }
     position: relative;
     width: 20%;
   }
-  
+
   a {
     background: $nav_bg;
     color: $link_color;
@@ -69,7 +69,7 @@ $warning_bg: tomato;
     text-decoration: none;
     -webkit-transition: background-color .25s ease;
     transition: background-color .25s ease;
-    
+
     &:hover {
       background: lighten(#222, 10%);
     }
