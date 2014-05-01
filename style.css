@@ -15,13 +15,15 @@
  * @lastmodified 2014-02-07
 */
 /* line 17, style.scss */
-* {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 31, style.scss */
+/* line 33, style.scss */
 .nav {
   color: #fff;
   font-family: Verdana, sans-serif;
@@ -29,15 +31,15 @@
   list-style-type: none;
   margin: 5em;
 }
-/* line 38, style.scss */
+/* line 40, style.scss */
 .nav li {
   display: inline-block;
   position: relative;
   width: 20%;
 }
-/* line 61, style.scss */
+/* line 63, style.scss */
 .nav a {
-  background: #222222;
+  background: red;
   color: white;
   display: block;
   padding: 1em;
@@ -46,7 +48,7 @@
   -webkit-transition: background-color .25s ease;
   transition: background-color .25s ease;
 }
-/* line 71, style.scss */
+/* line 73, style.scss */
 .nav a:hover {
   background: #3c3c3c;
 }
