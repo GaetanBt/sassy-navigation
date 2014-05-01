@@ -219,3 +219,5 @@ pip-log.txt
 #############
 .sass-cache
 config.codekit
+config.rb
+style.css
