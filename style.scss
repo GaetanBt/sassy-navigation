@@ -14,6 +14,14 @@
  *
  * @lastmodified 2014-02-07
 */
+
+// Variable
+$horizontal_navigation: true; // horizontal navigation -> true ; vertical navigation -> false
+
+$nav_bg:      #222;
+$link_color:  #fff;
+$warning_bg:  tomato;
+
 *,
 *:before,
 *:after {
@@ -21,13 +29,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-// Variable
-$horizontal_navigation: true; // horizontal navigation -> true ; vertical navigation -> false
-
-$nav_bg: #222;
-$link_color: #fff;
-$warning_bg: tomato;
 
 // Styling the navigation
 .nav {
