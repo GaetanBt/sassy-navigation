@@ -12,8 +12,17 @@
  * @see @ffoodd_fr on Twitter
  * @see ffoodd.fr
  *
- * @lastmodified 2014-02-07
+ * @lastmodified 2014-05-06
+ * @note Corrected some little stuff
 */
+
+// Variables
+$horizontal_navigation: true; // horizontal navigation -> true ; vertical navigation -> false
+
+$nav_bg:      #222;
+$link_color:  #fff;
+$warning_bg:  tomato;
+
 *,
 *:before,
 *:after {
@@ -22,17 +31,10 @@
   box-sizing: border-box;
 }
 
-// Variable
-$horizontal_navigation: true; // horizontal navigation -> true ; vertical navigation -> false
-
-$nav_bg: #222;
-$link_color: #fff;
-$warning_bg: tomato;
-
 // Styling the navigation
-.nav {
+nav {
   color: #fff;
-  font-family: Verdana, sans-serif;
+  font-family: 'Verdana', sans-serif;
   font-size: .875em;
   list-style-type: none;
   margin: 5em;
