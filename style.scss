@@ -12,8 +12,8 @@
  * @see @ffoodd_fr on Twitter
  * @see ffoodd.fr
  *
- * @lastmodified 2014-05-06
- * @note Corrected some little stuff
+ * @lastmodified 2014-10-17
+ * @note box-sizing inheritance
 */
 
 // Variables
@@ -23,12 +23,14 @@ $nav_bg:      #222;
 $link_color:  #fff;
 $warning_bg:  tomato;
 
+html { box-sizing: border-box }
+
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  -webkit-box-sizing: inherit;
+     -moz-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 // Styling the navigation
