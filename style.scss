@@ -72,10 +72,10 @@ nav {
     text-align: center;
     text-decoration: none;
     -webkit-transition: background-color .25s ease;
-    transition: background-color .25s ease;
+            transition: background-color .25s ease;
 
     &:hover {
-      background: lighten(#222, 10%);
+      background: lighten($nav_bg, 10%);
     }
   }
 }
