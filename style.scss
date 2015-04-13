@@ -6,14 +6,14 @@
  *
  * @author Gaëtan Bonnot
  * @see @GaetanBt on Twitter
- * @see gaetanbt.com (not already using Sass on my Website :$)
+ * @see gaetanbonnot.fr (not already using Sass on my Website :$)
  *
  * Some helpful advices from Gaël Poupard
  * @see @ffoodd_fr on Twitter
  * @see ffoodd.fr
  *
- * @lastmodified 2014-10-17
- * @note box-sizing inheritance
+ * @lastmodified 2015-04-13
+ * @note Deleted all vendor prefixes
 */
 
 // Variables
@@ -28,9 +28,7 @@ html { box-sizing: border-box }
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-     -moz-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 // Styling the navigation
@@ -71,8 +69,7 @@ nav {
     padding: 1em;
     text-align: center;
     text-decoration: none;
-    -webkit-transition: background-color .25s ease;
-            transition: background-color .25s ease;
+    transition: background-color .25s ease;
 
     &:hover {
       background: lighten($nav_bg, 10%);
